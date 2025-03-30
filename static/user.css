@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f0f8ff;
+  color: #050505;
+}
+
+/* Navbar */
+.nav-bar {
+  background-color: #267fcd;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #050505;
+}
+
+a:visited {
+  color: #050505;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.pages-links {
+  transform: translate(0px, 10px);
+  font-size: 20px;
+  color: #050505;
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Center table */
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+/* Table styles */
+table {
+  border-collapse: collapse;
+  width: 60%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: none;
+  border-bottom: 1px solid #267fcd;
+  border-right: 1px solid #267fcd;
+  padding: 12px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Remove right border on the last column */
+tr th:last-child,
+tr td:last-child {
+  border-right: none;
+}
+
+th {
+  background-color: #267fcd;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f8ff;
+}
